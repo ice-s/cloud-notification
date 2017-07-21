@@ -5,7 +5,7 @@ use ices\CloudMessage\SendNotification\NotiInterface\SendNoti as Sendnoti;
 
 use ices\CloudMessage\Message\MessageNotification;
 
-define('API_ACCESS_KEY_FCM', 'AIzaSyAHLmehfalcwwp-_RE4U4Npb33cO4pVgEA');
+define('API_ACCESS_KEY_FCM', 'API_ACCESS_KEY_FCM');
 
 class SendNotiFCM implements SendNoti
 {

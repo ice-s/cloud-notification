@@ -23,7 +23,7 @@ class SendNotiAPNs implements SendNoti
         $deviceToken = $this->token;
         try {
             $ctx = stream_context_create();
-            stream_context_set_option($ctx, 'ssl', 'local_cert', APPPATH . "config/push_production.pem");
+            stream_context_set_option($ctx, 'ssl', 'local_cert', "config/push_production.pem");
             stream_context_set_option($ctx, 'ssl', 'passphrase', "12345");
             $fp = stream_socket_client(
                 'ssl://gateway.push.apple.com:2195', $err,
